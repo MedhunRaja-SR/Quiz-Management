@@ -1,0 +1,149 @@
+
+.box1 {
+    background: linear-gradient(to right, rgb(156, 142, 222), 50%, rgb(226, 225, 221) );
+    margin-top: 12vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+  
+    border-radius: 10px;
+  }
+  .box2 {
+    background: linear-gradient(to right, rgb(156, 142, 222), 50%, rgb(226, 225, 221) );
+    margin-top: 7vh;
+    padding-top: 50%;
+    width:100%;
+    color: #170c53;
+    text-align: center;
+    border-radius: 20px;
+  }
+ 
+  .btn1{
+      border-radius: 5px;
+      width:75px;
+  }
+  th{
+      font-size: x-large;
+  }
+  
+  .leftside{
+      padding-left: 15px;
+      text-align: center;
+      width: 30%;
+      border-color: #fff;
+      border-width: 1px;
+      border-top-left-radius: 10px;
+      border-left: 0px;
+  }
+  .rightside{
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-align: center;
+      width: 20%;
+      border-color: #fff;
+      border-width: 1px;
+      border-radius: 10px;
+      border-right: 1px;
+  }
+  .rightend{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 50%;
+    border-color: #fff;
+    border-width: 1px;
+    border-radius: 5px;
+}
+  .topside{
+      border-top: 0px;
+      border-right: 0px;
+  }
+  .yesbtn{
+      margin-right: 10px;
+      border-radius: 5px;
+      width: 50px;
+  }
+  .nobtn{
+    border-radius: 5px;
+    width: 50px;
+}
+  #opt{
+    width: 100px;
+    border-radius: 5px;
+  }
+  .finalsubmitbtn{
+      position: absolute;
+      left: 50%;
+      margin-top: 10px;
+      border-radius: 5px;
+      width:75px;
+      margin-bottom: 10%;
+      text-align: center;
+      left: 47%;
+  }
+  .lastrow{
+      border-bottom: 0px;
+  }
+
+.qdiv{
+    background-color: rgb(144, 82, 148);
+    border-radius: 10px;
+    padding-bottom: 30px;
+    margin-top: 0% ;
+    width: 95%;
+    padding-left: 10px;
+    
+
+}
+
+.qdivbtn{
+    background-color: rgb(144, 82, 148);
+    text-align: center;
+    margin: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.main{
+    background: white;
+    position: absolute;
+    z-index: -1;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+.bigbtn, .lastbtn{
+    width: 120px;
+}
+.bigbtn{
+	border:white;
+	background: white;
+    padding: 5px;
+}
+
+.largeLable{
+    font-size: large;
+}
+
+.selectTag{
+    position: absolute;
+    top:90px;
+    left:775px;
+    width: 270px;
+    height: 5vh;
+}
+.tab1{
+    text-align: center;
+}
+.error-message{
+    position: absolute;
+    margin: 0%;
+    margin-bottom: 10px;
+    text-align: center;
+    left: 600px;
+    color: black;
+}

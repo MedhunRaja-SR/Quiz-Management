@@ -1,0 +1,4 @@
+com\mfpe\AuditBenchmarkApplicationTests.class
+com\mfpe\service\AuthorizationServiceTests.class
+com\mfpe\controller\AuditBenchmarkControllerTests.class
+com\mfpe\service\AuditBenchmarkServiceTests.class

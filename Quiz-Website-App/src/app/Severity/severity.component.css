@@ -1,0 +1,35 @@
+.result-card{
+    top:150px;
+    background:linear-gradient(to left, rgb(135, 175, 226), 40%, rgb(101, 76, 194) );
+    color:#ffffffb2
+}
+
+
+td, th{
+    text-align: center;
+    background-color: rgb(90, 21, 95);
+    color:#ffffffb2;
+
+}
+.bigbtn{
+	border:white;
+	background: white;
+    padding: 5px;
+}
+.endbtn{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tsev{
+    font-weight: 500;
+}
+
+.dotdots{
+    position: absolute;
+    top:15vh;
+    left:37vw;
+}
+h2{
+    color:deeppink; 
+}

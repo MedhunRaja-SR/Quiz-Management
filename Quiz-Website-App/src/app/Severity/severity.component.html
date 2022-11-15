@@ -1,0 +1,84 @@
+<!-- Header -->
+<app-nav-header></app-nav-header>
+<!-- Component Body -->
+<div class="dotdots" *ngIf="status.length==0">
+<div class="spinner-grow text-primary p-2 m-2" role="status">
+    <span class="visually-hidden px-2">Loading...</span>
+  </div>
+  <div class="spinner-grow text-secondary p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-success p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-danger p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-warning p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-info p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-light p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-dark p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div class="card result-card" >
+    <div class="card-header" *ngIf="status.length>0">
+      <h2 class="text-center font-weight-bold pt-2">Quiz-Result</h2>
+    </div>
+    <div class="card-body" *ngIf="status.length>0">
+      <h5 class="card-title">Quiz-Details</h5>
+      <table class="table table-dark dark-table">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Course Type</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span>{{quizResponse.userName}}</span>
+                </td>
+                <td>
+                    <span style="color:chartreuse">{{quizResponse.courseType}}</span>
+                </td>
+                <td>
+                  <span>{{quizResponse.score}} / 5</span>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="card-body" *ngIf="status.length>0">
+        <h5 class="card-title ">Actions</h5>
+        <table class="table table-dark dark-table">
+            <thead>
+                <tr>
+                    <th>Remarks</th>
+                    <th>Suggestion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span>{{quizResponse.status}}</span>
+                    </td>
+                    <td>
+                        <span>{{quizResponse.suggestion}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+    <a class="endbtn" routerLink="../checklist" *ngIf="status.length>0"><button class="btn bigbtn">Back to Quiz</button></a>
+    <br/><br/>
+</div>

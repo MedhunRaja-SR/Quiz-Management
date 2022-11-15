@@ -1,0 +1,12 @@
+com\mfpe\service\AuthorizationService.class
+com\mfpe\AuditChecklistApplication.class
+com\mfpe\exception\ExceptionHandlerAdvice.class
+com\mfpe\model\Question.class
+com\mfpe\service\QuestionServiceImpl.class
+com\mfpe\service\QuestionService.class
+com\mfpe\controller\AuditChecklistController.class
+com\mfpe\model\AuditType.class
+com\mfpe\repository\QuestionRepo.class
+com\mfpe\service\AuthorizationServiceImpl.class
+com\mfpe\model\AuthenticationResponse.class
+com\mfpe\feign\AuthorizationFeign.class

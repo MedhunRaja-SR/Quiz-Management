@@ -1,0 +1,11 @@
+com\mfpe\AuditBenchmarkApplication.class
+com\mfpe\service\AuthorizationService.class
+com\mfpe\model\AuditBenchmark.class
+com\mfpe\exception\ExceptionHandlerAdvice.class
+com\mfpe\repository\AuditBenchmarkRepo.class
+com\mfpe\service\AuditBenchmarkService.class
+com\mfpe\service\AuthorizationServiceImpl.class
+com\mfpe\model\AuthenticationResponse.class
+com\mfpe\service\AuditBenchmarkServiceImpl.class
+com\mfpe\feign\AuthorizationFeign.class
+com\mfpe\controller\AuditBenchmarkController.class

@@ -1,0 +1,14 @@
+com\mfpe\security\SecurityConfig.class
+com\mfpe\exception\ExceptionHandlerAdvice.class
+com\mfpe\controller\AuthController.class
+com\mfpe\service\JwtService.class
+com\mfpe\service\ProjectManagerService.class
+com\mfpe\exception\ProjectManagerNotFoundException.class
+com\mfpe\model\AuthenticationRequest.class
+com\mfpe\AuditAuthorizationApplication.class
+com\mfpe\model\ProjectManager.class
+com\mfpe\repository\ProjectManagerRepo.class
+com\mfpe\service\ProjectManagerDetailsService.class
+com\mfpe\filter\JwtRequestFilter.class
+com\mfpe\model\AuthenticationResponse.class
+com\mfpe\model\ProjectManagerDetails.class

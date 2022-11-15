@@ -1,0 +1,54 @@
+<!-- Header -->
+<app-nav-header></app-nav-header>
+<!-- Component Body -->
+<div class="main">
+    <form class=" box1" *ngIf="securityService.getLoginStatus()">
+        <div class="tab1">
+        <label class="largeLable" for="opt">Choose Course Type : </label>
+        <select class="selectTag" name="opt" id="opt" [(ngModel)]="type">
+            <option value="none" selected hidden>Select an Option</option>
+            <option value="C">C</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="SQL">SQL</option>
+            <option value="JS">JS</option>
+        </select>
+        <br><br>
+        <input class="btn1 btn-info bigbtn" type="submit" value="See Questions" (click)="getQuestions()">
+    </div>
+    <div class="d-flex justify-content-center container qdiv py-3" *ngIf="loadFlag && questions.length==0">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    </form>
+    <div class="container qdiv" *ngIf="questions.length>0">
+        <table class="box2" >
+            <!--We can use "box2" and add rows by using a default format "<tr>", last one will be different, so last one will have to be assigned separately-->
+            <tr>
+                <th class="leftside topside">Question</th>
+                <th class="rightside topside">Choices</th>
+                <th class="rightside topside">Response</th> 
+            </tr>
+            <tr *ngFor="let question of questions;let i = index">
+                <td class="leftside" name="question">{{question.question}}</td>
+                <td class="rightend" name="response_table_data" >
+                    <input type="button" value="{{question.option1}}" class="btn btn-success mx-4 px-4" name="option" (click) = "responseOption1(i)"/>
+                    <input type="button" value="{{question.option2}}" class="btn btn-success mx-4 px-4" name="option" (click) = "responseOption2(i)"/>
+                    <br/><br/>
+                    <input type="button" value="{{question.option3}}" class="btn btn-success mx-4 px-4" name="option" (click) = "responseOption3(i)"/>
+                    <input type="button" value="{{question.option4}}" class="btn btn-success mx-4 px-4" name="option" (click) = "responseOption4(i)"/>
+                </td>
+                <td class="rightside" name="courseType">{{question.response}}</td>  
+            </tr>
+        </table>
+        <div class="qdivbtn" >
+            <button type="submit" class="btn btn-info bigbtn" (click)="getResponse()">Submit</button>
+            <p style="color:aqua;text-align:right;">All the Best..!</p>
+        </div>
+        <div class="alert alert-warning error-message" role="alert" *ngIf="message.length>0">
+            {{ message }}
+        </div>
+        <br/><br/><br/>
+    </div>
+</div>

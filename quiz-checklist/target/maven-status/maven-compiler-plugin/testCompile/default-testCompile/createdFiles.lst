@@ -1,0 +1,4 @@
+com\mfpe\controller\AuditChecklistControllerTests.class
+com\mfpe\service\AuthorizationServiceTests.class
+com\mfpe\AuditChecklistApplicationTests.class
+com\mfpe\service\QuestionServiceTests.class
